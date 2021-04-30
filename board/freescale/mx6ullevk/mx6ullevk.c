@@ -782,8 +782,8 @@ void do_enable_parallel_lcd(struct display_info_t const *dev)
         * controlled by the kernel driver.
         */
 
-	/* Set Brightness to high */
-	gpio_direction_output(IMX_GPIO_NR(1, 8) , 1);
+	/* Set Brightness to low */
+	gpio_direction_output(IMX_GPIO_NR(1, 8) , 0);
 }
 
 struct display_info_t const displays[] = {
